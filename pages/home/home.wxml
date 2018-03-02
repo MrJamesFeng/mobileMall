@@ -1,0 +1,13 @@
+<!--pages/home/home.wxml-->
+<swiper indicator-dots='true' autoplay='true' duration='1000' bindchange='swiperChange'>
+  <swiper-item wx:for='{{sliderList}}' wx:for-item='slider'>
+    <image src='{{slider.picurl}}' class='slider-img'></image>
+  </swiper-item>
+</swiper>
+
+<view class='venuesList-container'>
+<image wx:for='{{venuesList}}' wx:for-item='venues' src='{{venues.smallpic}}'></image>
+</view>
+
+<view class='choiceList-container'>
+</view>
